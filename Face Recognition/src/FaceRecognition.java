@@ -19,7 +19,7 @@ public class FaceRecognition {
       String file = path;
       Mat src = Imgcodecs.imread(file);
 
-      String xmlFile = "C:/Users/matij/OneDrive/Dokumenti/opencv/build/etc/lbpcascades/lbpcascade_frontalface.xml";
+      String xmlFile = "path/to/your/xml";
       CascadeClassifier classifier = new CascadeClassifier(xmlFile);
 
       MatOfRect faceDetections = new MatOfRect();
